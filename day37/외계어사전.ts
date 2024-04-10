@@ -22,6 +22,3 @@ console.log(외계어사전(['s', 'o', 'm', 'd'], ['moos', 'dzx', 'smm', 'sunmmo
 console.log(외계어사전2(['p', 'o', 's'], ['sod', 'eocd', 'qixm', 'adio', 'soo'])); // 2
 console.log(외계어사전2(['z', 'd', 'x'], ['def', 'dww', 'dzx', 'loveaw'])); // 1
 console.log(외계어사전2(['s', 'o', 'm', 'd'], ['moos', 'dzx', 'smm', 'sunmmo', 'som'])); // 2
-
-const st = ['a', 'b'];
-console.log(st.toString());
