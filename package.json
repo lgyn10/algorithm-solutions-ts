@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "eslint": "^8.54.0",
     "eslint-config-gwyng": "github:gwyng-dev/eslint-config-gwyng",
     "ts-node": "^10.9.1",
