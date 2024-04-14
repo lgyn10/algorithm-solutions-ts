@@ -2,6 +2,11 @@
 
 // 부수 효과 핸들링에 대한 코딩 테스트..?
 
+//! 물을 주지 않은 식물은 감소한다. 로 표현하는 것이 옳을 듯.
+//| 추가 제한 사항
+//| emotions orders 는 30만 이하
+// 단순 구현으로는 시간 효율 초과
+
 // ver 1. 최초 코드
 const 식물의상태 = (emotions: number[], orders: number[]): number[] => {
   const ans = [];
@@ -18,6 +23,7 @@ const 식물의상태 = (emotions: number[], orders: number[]): number[] => {
 };
 
 // ver 2. 개선 코드
+//| 단순 구현으로 푼 코드에 해당한다.
 // filter 함수를 제거하고 map 함수 내에서 바로 검사할 수 있도록 하여
 // 불필요한 배열 순회를 막았음
 const 식물의상태2 = (emotions: number[], orders: number[]): number[] => {
@@ -36,6 +42,8 @@ const 식물의상태2 = (emotions: number[], orders: number[]): number[] => {
   }
   return ans;
 };
+
+//| ver 3. map에 튜플구조의 배열 선언해도 좋겠다. [초기값, 수정값]
 
 console.log(식물의상태([2, 3, 1, 2], [3, 1, 2, 1, 4, 1])); //  [4, 2, 2, 2, 2, 1]
 console.log(식물의상태([5, 5, 5], [1, 2, 1, 2, 3])); // [3, 3, 3, 3, 3]
