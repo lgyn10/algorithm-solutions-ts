@@ -27,6 +27,7 @@ const 직사각형넓이구하기2 = (dots: [number, number][]): number => {
 };
 
 // ver 3. 효율 개선 코드
+// ver1과 ver2를 획기적으로 개선할 수 있는 코드를 발견하지 못 함
 
 console.log(
   직사각형넓이구하기([
