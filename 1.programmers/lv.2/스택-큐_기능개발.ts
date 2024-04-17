@@ -1,6 +1,6 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/42586
 
-import { zip } from "lodash";
+import { zip } from 'lodash';
 
 // 각 기능은 진도가 100% 일 때, 서비스 반영 가능
 // 뒤에 있는 기능이 앞에 있는 기능보다 먼저 개발될 수 있다.
@@ -24,15 +24,11 @@ const 기능개발 = (prgs: number[], speeds: number[]): number[] => {
     const requiringDay = Math.ceil(leftPrg / speed!); // Non-null Assertion Operator
     return requiringDay;
   });
-  console.log("requiringDays:", requiringDays);
+  console.log('requiringDays:', requiringDays);
 
   //! 배포가 가능한 날 배포되는 기능의 개수 배열
   const deploysPerDay = [];
-  for (
-    let idx = 1, dayCnt = 1, maxDelayedDay = requiringDays[0];
-    idx <= requiringDays.length;
-    idx++
-  ) {
+  for (let idx = 1, dayCnt = 1, maxDelayedDay = requiringDays[0]; idx <= requiringDays.length; idx++) {
     if (maxDelayedDay >= requiringDays[idx]) dayCnt += 1;
     else {
       deploysPerDay.push(dayCnt);
@@ -56,6 +52,6 @@ const [progresses3, speeds3] = [
   [5, 4, 3, 1],
 ];
 
-console.log("기능개발1: ", 기능개발(progresses1, speeds1)); // [2, 1]
-console.log("기능개발2: ", 기능개발(progresses2, speeds2)); // [1, 3, 2]
-console.log("기능개발3: ", 기능개발(progresses3, speeds3)); // [1, 2, 1]
+console.log('기능개발1: ', 기능개발(progresses1, speeds1)); // [2, 1]
+console.log('기능개발2: ', 기능개발(progresses2, speeds2)); // [1, 3, 2]
+console.log('기능개발3: ', 기능개발(progresses3, speeds3)); // [1, 2, 1]

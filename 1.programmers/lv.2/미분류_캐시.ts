@@ -61,74 +61,21 @@ const cache = (cacheSize: number, cities: string[]): number => {
 
 const [cacheSize1, cities1] = [
   3,
-  [
-    "Jeju",
-    "Pangyo",
-    "Seoul",
-    "NewYork",
-    "LA",
-    "Jeju",
-    "Pangyo",
-    "Seoul",
-    "NewYork",
-    "LA",
-  ],
+  ['Jeju', 'Pangyo', 'Seoul', 'NewYork', 'LA', 'Jeju', 'Pangyo', 'Seoul', 'NewYork', 'LA'],
 ];
 
-const [cacheSize2, cities2] = [
-  3,
-  [
-    "Jeju",
-    "Pangyo",
-    "Seoul",
-    "Jeju",
-    "Pangyo",
-    "Seoul",
-    "Jeju",
-    "Pangyo",
-    "Seoul",
-  ],
-];
+const [cacheSize2, cities2] = [3, ['Jeju', 'Pangyo', 'Seoul', 'Jeju', 'Pangyo', 'Seoul', 'Jeju', 'Pangyo', 'Seoul']];
 const [cacheSize3, cities3] = [
   2,
-  [
-    "Jeju",
-    "Pangyo",
-    "Seoul",
-    "NewYork",
-    "LA",
-    "SanFrancisco",
-    "Seoul",
-    "Rome",
-    "Paris",
-    "Jeju",
-    "NewYork",
-    "Rome",
-  ],
+  ['Jeju', 'Pangyo', 'Seoul', 'NewYork', 'LA', 'SanFrancisco', 'Seoul', 'Rome', 'Paris', 'Jeju', 'NewYork', 'Rome'],
 ];
 const [cacheSize4, cities4] = [
   5,
-  [
-    "Jeju",
-    "Pangyo",
-    "Seoul",
-    "NewYork",
-    "LA",
-    "SanFrancisco",
-    "Seoul",
-    "Rome",
-    "Paris",
-    "Jeju",
-    "NewYork",
-    "Rome",
-  ],
+  ['Jeju', 'Pangyo', 'Seoul', 'NewYork', 'LA', 'SanFrancisco', 'Seoul', 'Rome', 'Paris', 'Jeju', 'NewYork', 'Rome'],
 ];
-const [cacheSize5, cities5] = [2, ["Jeju", "Pangyo", "NewYork", "newyork"]];
-const [cacheSize6, cities6] = [0, ["Jeju", "Pangyo", "Seoul", "NewYork", "LA"]];
-const [cacheSize7, cities7] = [
-  3,
-  ["Jeju", "Jeju", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"],
-];
+const [cacheSize5, cities5] = [2, ['Jeju', 'Pangyo', 'NewYork', 'newyork']];
+const [cacheSize6, cities6] = [0, ['Jeju', 'Pangyo', 'Seoul', 'NewYork', 'LA']];
+const [cacheSize7, cities7] = [3, ['Jeju', 'Jeju', 'Jeju', 'Pangyo', 'Seoul', 'NewYork', 'LA']];
 
 console.log(cache(cacheSize1, cities1)); // 50
 console.log(cache(cacheSize2, cities2)); // 21

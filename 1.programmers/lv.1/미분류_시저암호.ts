@@ -18,10 +18,10 @@
 
 // 시저 암호 함수 2
 function caesarCipher2(s: string, n: number) {
-  const space_ASCII = " ".charCodeAt(0);
-  const A_ASCII = "A".charCodeAt(0);
-  const a_ASCII = "a".charCodeAt(0);
-  const azNum = "Z".charCodeAt(0) - A_ASCII + 1;
+  const space_ASCII = ' '.charCodeAt(0);
+  const A_ASCII = 'A'.charCodeAt(0);
+  const a_ASCII = 'a'.charCodeAt(0);
+  const azNum = 'Z'.charCodeAt(0) - A_ASCII + 1;
   const isUpper = (s: string) => s.match(/[A-Z]/g);
 
   return [...s]
@@ -35,8 +35,8 @@ function caesarCipher2(s: string, n: number) {
       return basisNum + ((ascNumSum - basisNum) % azNum);
     })
     .map((v) => String.fromCharCode(v))
-    .join("");
+    .join('');
 }
 
-const day5str = "a B z";
+const day5str = 'a B z';
 console.log(caesarCipher2(day5str, 4)); // e F d

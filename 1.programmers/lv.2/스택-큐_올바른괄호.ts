@@ -12,20 +12,20 @@
 
 //! (2) 단순 반복문
 const 올바른괄호 = (s: string): boolean => {
-  if (s.startsWith(")")) return false;
+  if (s.startsWith(')')) return false;
   let cnt = 0;
   for (const char of s) {
-    cnt += char === "(" ? 1 : -1;
+    cnt += char === '(' ? 1 : -1;
     if (cnt < 0) return false;
   }
   return !cnt;
 };
 
-const alls1 = "()()";
-const alls2 = "(())()";
-const alls3 = ")()(";
-const alls4 = "(()(";
-const alls5 = "(()))))(((((";
+const alls1 = '()()';
+const alls2 = '(())()';
+const alls3 = ')()(';
+const alls4 = '(()(';
+const alls5 = '(()))))(((((';
 
 console.log(올바른괄호(alls1)); // true
 console.log(올바른괄호(alls2)); // true
